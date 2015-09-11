@@ -54,8 +54,7 @@ $nirvana_defaults = array(
 
 "nirvana_sliderimg1"	=> get_template_directory_uri()."/images/slider/nirvana-slide1.jpg",
 "nirvana_slidertitle1"	=> "Nirvana makes things easy!",
-"nirvana_slidertext1"	=> 'Nirvana makes things easier than ever before. No coding and no extra CSS styling needed. With a simple user interface of over 200 settings you can change anything:
-							every color, every line of text and every design element is editable with a simple mouse click from the <a href="/wp-admin/themes.php?page=nirvana-page">Theme Settings</a>.',
+"nirvana_slidertext1"	=> 'test to change header text',
 "nirvana_sliderlink1"	=> "#",
 "nirvana_sliderimg2"	=> get_template_directory_uri()."/images/slider/nirvana-slide2.jpg",
 "nirvana_slidertitle2"	=> "Nirvana gives you choices!",
