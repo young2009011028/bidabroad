@@ -53,11 +53,11 @@ $nirvana_defaults = array(
 "nirvana_slideSpecific"	=> "",
 
 "nirvana_sliderimg1"	=> get_template_directory_uri()."/images/slider/nirvana-slide1.jpg",
-"nirvana_slidertitle1"	=> "Nirvana makes things easy!",
+"nirvana_slidertitle1"	=> "Bidabroad is cool!",
 "nirvana_slidertext1"	=> 'test to change header text',
 "nirvana_sliderlink1"	=> "#",
 "nirvana_sliderimg2"	=> get_template_directory_uri()."/images/slider/nirvana-slide2.jpg",
-"nirvana_slidertitle2"	=> "Nirvana gives you choices!",
+"nirvana_slidertitle2"	=> "BidAbroad gives your choice.",
 "nirvana_slidertext2"	=> "This slider alone has over 20 options for you to customize it with: size, borders, animations, navigation types and individual slides are all editable via the Theme Settings.
 							<br>The columns, as well as everything else on this Presentation page are also fully customizable.",
 "nirvana_sliderlink2"	=> "#",
