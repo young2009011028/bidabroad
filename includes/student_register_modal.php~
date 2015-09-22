@@ -1,20 +1,46 @@
 
-
 <?php
 /*
 include("guid_creator.php");
 $guid_class = new UUID;
 echo $guid_class->v4();
 */
+
+if (isset($_POST['action'])) {
+    switch ($_POST['action']) {
+        case '确认':
+            insert();
+            break;
+        case 'select':
+            select();
+            break;
+    }
+}
+
+function select() {
+    echo "The select function is called.";
+    exit;
+}
+
+function insert() {
+    echo "The insert function is called.";
+    exit;
+}
 ?>
+
+
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="/includes/css/bootstrap.min.css">
-
 <!-- Optional theme -->
 <link rel="stylesheet" href="/includes/css/bootstrap-theme.min.css">
-
 <!-- Latest compiled and minified JavaScript -->
 <script src="/includes/js/bootstrap.min.js"></script>
+<script src="/includes/js/jquery-2.1.4.min.js"></script>
+<script src="/includes/js/student_register.js"></script>
+
+
+<body>
+
 <button id="btnStudentRegister" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">学生注册</button> 
 
 
@@ -78,7 +104,7 @@ echo $guid_class->v4();
 	        <button type="button" class="btn btn-default " data-dismiss="modal">已有账号，我要登陆</button> 
 	        </div>
 	        <div  class="col-md-2">
-	        <button type="button" class="btn btn-default " data-dismiss="modal">确认</button>    
+	        <input id="btnConfirm" type="submit" name="insert" value="确认" class="btn btn-default " data-dismiss="modal"></input>    
 	         </div>
 	        <div  class="col-md-2">
 	        <button type="button" class="btn btn-default " data-dismiss="modal">取消</button>    
@@ -87,3 +113,6 @@ echo $guid_class->v4();
     </div> 
   </div> 
 </div>
+</body>
+
+
