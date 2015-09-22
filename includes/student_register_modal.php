@@ -1,6 +1,18 @@
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="/includes/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="/includes/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="/includes/js/bootstrap.min.js"></script>
+
 <?php
-
-
+/*
+include("guid_creator.php");
+$guid_class = new UUID;
+echo $guid_class->v4();
+*/
 ?>
 
 <button id="btnStudentRegister" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">学生注册</button> 
