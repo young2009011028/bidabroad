@@ -28,17 +28,16 @@ function insert() {
 }
 ?>
 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="/includes/css/bootstrap.min.css">
 <!-- Optional theme -->
 <link rel="stylesheet" href="/includes/css/bootstrap-theme.min.css">
 <!-- Latest compiled and minified JavaScript -->
-<script src="/includes/js/bootstrap.min.js"></script>
 <script src="/includes/js/jquery-2.1.4.min.js"></script>
+<script src="/includes/js/bootstrap.min.js"></script>
 <script src="/includes/js/student_register.js"></script>
-
-
 
 <button id="btnStudentRegister" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">学生注册</button>
 
