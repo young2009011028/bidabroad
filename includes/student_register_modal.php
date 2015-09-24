@@ -40,18 +40,18 @@ function insert() {
 
 
 
-<button id="btnStudentRegister" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">学生注册</button> 
+<button id="btnStudentRegister" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">学生注册</button>
 
 
-<div id="myModal" class="modal fade" role="dialog"> 
-  <div class="modal-dialog"> 
-    <!-- Modal content--> 
-    <div class="modal-content"> 
-      <div class="modal-header"> 
-        <button type="button" class="close" data-dismiss="modal">&times;</button> 
-        <h4 class="modal-title">学生注册</h4> 
-      </div> 
-      <div class="modal-body"> 
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">学生注册</h4>
+      </div>
+      <div class="modal-body">
 <table>
 	<tr>
 	<td>
@@ -69,7 +69,7 @@ function insert() {
 	<input id="iptEmail"></input>
 	</td>
 	</tr>
-	
+
 		<tr>
 	<td>
 	<label>电话</label>
@@ -78,7 +78,7 @@ function insert() {
 	<input id="iptPhone"></input>
 	</td>
 	</tr>
-	
+
 			<tr>
 	<td>
 	<label>微信</label>
@@ -97,21 +97,18 @@ function insert() {
 	</td>
 	</tr>
 </table>
-      </div> 
-      <div class="modal-footer"> 
+      </div>
+      <div class="modal-footer">
 	      <div class="col-md-6">
-	        <button type="button" class="btn btn-default " data-dismiss="modal">已有账号，我要登陆</button> 
+	        <button type="button" class="btn btn-default " data-dismiss="modal">已有账号，我要登陆</button>
 	        </div>
 	        <div  class="col-md-2">
-	        <input id="btnConfirm" type="submit" name="insert" value="确认" class="btn btn-default " data-dismiss="modal"></input>    
+	        <input id="btnConfirm" type="submit" name="insert" value="确认" class="btn btn-default " data-dismiss="modal"></input>
 	         </div>
 	        <div  class="col-md-2">
-	        <button type="button" class="btn btn-default " data-dismiss="modal">取消</button>    
+	        <button type="button" class="btn btn-default " data-dismiss="modal">取消</button>
 	         </div>
-	      </div> 
-    </div> 
-  </div> 
+	      </div>
+    </div>
+  </div>
 </div>
-
-
-
