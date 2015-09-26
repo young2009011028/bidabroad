@@ -1,10 +1,12 @@
-
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <?php
 /*
 include("guid_creator.php");
 $guid_class = new UUID;
 echo $guid_class->v4();
 */
+include"database.php";
+//include"user_class.php";
 
 if (isset($_POST['action'])) {
     switch ($_POST['action']) {
@@ -23,12 +25,15 @@ function select() {
 }
 
 function insert() {
-    echo "The insert function is called.";
+  $test = new student_user();
+  $test->student_email = "youngzhang8@gmail.com";
+  $test->student_name = "young";
+  database_controllder::WriteStudentToDataBase($test);
     exit;
 }
 ?>
 
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
 
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="/includes/css/bootstrap.min.css">

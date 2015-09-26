@@ -1,5 +1,5 @@
 <?php
-include "guid_creator.php"
+include "guid_creator.php";
 		class user{
 			public $user_id;
 			public $user_type;
@@ -27,7 +27,7 @@ include "guid_creator.php"
 			public $student_telephone;
 			public $student_qq;
 			public $student_wechat;
-			public &student_create_time;
+			public $student_create_time;
 			public $student_last_login_time;
 			public $student_total_access_number;
 			public $student_is_deleted;
@@ -35,6 +35,7 @@ include "guid_creator.php"
 			public $student_configuration;
 			public function __construct()
 			{
+				parent::__construct("S");
 				$this->student_configuration = new user_configuration;
 			}
 		}
