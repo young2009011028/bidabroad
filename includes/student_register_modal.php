@@ -28,6 +28,8 @@ function insert() {
   $test = new student_user();
   $test->student_email = "youngzhang8@gmail.com";
   $test->student_name = "young";
+  $test->student_password="test";
+  $test->student_create_time = date("Y-m-d H:i:s");
   database_controllder::WriteStudentToDataBase($test);
     exit;
 }
