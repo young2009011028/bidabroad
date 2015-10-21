@@ -31,7 +31,7 @@ function insert() {
   $test->student_password="test";
   $test->student_create_time = date("Y-m-d H:i:s");
   database_controllder::WriteStudentToDataBase($test);
-    exit;
+
 }
 ?>
 

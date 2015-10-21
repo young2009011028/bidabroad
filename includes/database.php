@@ -1,10 +1,7 @@
 <?php
 include"user_class.php";
 class database_controllder{
-	//public $servername = 'localhost';
-	//public $username='bid_user';
-	//public $password='bidabroad';
-	//public $dbname = 'ba';
+
     //function
     function WriteStudentToDataBase(student_user $student){
     	$servername = 'localhost';
@@ -19,7 +16,7 @@ class database_controllder{
     	}
     	
     	try {
-    		$conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+    		//$conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
 
 			$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 			
@@ -36,9 +33,18 @@ class database_controllder{
     		 $conn->exec($sql);
     		 echo "New configuration record created successfully";
     		 
-    		 $sql =  "Insert INTO students (student_id,student_name,student_email,student_password,student_create_time) VALUES (UNHEX('$student->user_id'),'$student->student_name','$student->student_email','$student->student_password','$student->student_create_time')";
+    		 //$sql =  "Insert INTO students (student_id,student_name,student_email,student_password,student_create_time) VALUES (UNHEX('$student->user_id'),'$student->student_name','$student->student_email','$student->student_password','$student->student_create_time')";
+    		 $configid  = $student->student_configuration->configuration_id;
+    		 $sql = "Insert INTO students (student_id,student_name,student_email,student_password,student_telephone,student_qq,student_wechat,student_create_time,
+    		  student_last_login_time,student_total_access_number,student_is_deleted,student_delete_time,student_configuration_id) VALUES
+    		  (UNHEX('$student->user_id'),'$student->student_name','$student->student_email','$student->student_password','$student->student_telephone',
+    		  '$student->student_qq','$student->student_wechat','$student->student_create_time','$student->student_last_login_time','$student->student_total_access_number',
+    		  '$student->student_is_deleted','$student->student_delete_time',UNHEX('$configid'))"; 
+    		 
     		 $conn->exec($sql);
     		 echo "New students record created successfully";
+    		 
+    		 
     		 
     		 $conn->commit();
     	}
